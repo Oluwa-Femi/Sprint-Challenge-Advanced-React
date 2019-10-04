@@ -15,7 +15,6 @@ class App extends React.Component {
     fetch('http://localhost:5000/api/players')
       .then(res => res.json())
       .then(data => {
-
         this.setState({ player: data })
       })
       .catch(err => console.log(err))
